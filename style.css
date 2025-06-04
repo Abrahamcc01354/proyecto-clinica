@@ -29,7 +29,7 @@ hr {
 .form-select,
 .form-control:focus,
 .form-select:focus {
-    background-color: #448349;
+    background-color: #8ee4c3d8;
     color: #000000;
     border: 1px solid #008011;
 }
