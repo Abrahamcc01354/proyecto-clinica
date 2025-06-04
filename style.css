@@ -1,0 +1,166 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000000;
+    color: #089126;
+}
+
+.container {
+    background-color: #1a1a1a;
+    border: 2px solid #004e00;
+    border-radius: 8px;
+    padding: 20px;
+}
+h1 {
+    color: #007000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+h2 {
+    color: #007000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+hr {
+    border-top: 1px solid #008000;
+}
+
+.form-control,
+.form-select,
+.form-control:focus,
+.form-select:focus {
+    background-color: #448349;
+    color: #000000;
+    border: 1px solid #008011;
+}
+
+.form-label {
+    color: #166b21;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.triaje-leve {
+    background-color: #1a4f1a;
+    color: #e0ffe0;
+}
+
+.triaje-moderado {
+    background-color: #5c5c1a;
+    color: #ffffcc;
+}
+
+.triaje-urgente {
+    background-color: #804000;
+    color: #ffe0b3;
+}
+
+.triaje-critico {
+    background-color: #800000;
+    color: #ffe0e0;
+    font-weight: bold;
+    animation: parpadeo 1s infinite alternate;
+}
+
+@keyframes parpadeo {
+    from { background-color: #800000; }
+    to { background-color: #b30000; }
+}
+
+.table {
+    color: #33cf62;
+    border-color: #008026;
+    margin-bottom: 20px;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border-color: #008020;
+}
+
+.table-dark {
+    background-color: #008011;
+    color: #ffffff;
+}
+
+.card {
+    border: 1px solid #00800b;
+}
+
+.bg-success {
+    background-color: #1a4f1a !important;
+}
+.bg-warning {
+    background-color: #5c5c1a !important;
+    color: #f0f0f0 !important;
+}
+.bg-orange {
+    background-color: #804000 !important;
+}
+.bg-danger {
+    background-color: #800000 !important;
+}
+
+.card-title {
+    color: inherit;
+}
+
+@media screen and (max-width: 767px) {
+    .table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .table tr {
+        border: 1px solid #000080;
+        display: block;
+        margin-bottom: 0.625em;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .table td {
+        border-bottom: 1px solid #2a2a2a;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    .table td:first-child {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1em;
+        background-color: rgba(0, 0, 128, 0.2);
+        border-radius: 3px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .table td:last-child {
+        border-bottom: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 10px;
+        color: #a0dfff;
+    }
+}
